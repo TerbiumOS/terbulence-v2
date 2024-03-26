@@ -1,0 +1,752 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../resources/Roboto.ttf);
+}
+
+@font-face {
+    font-family: Metro;
+    src: url(../resources/metropolis-regular.otf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../resources/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Consolas;
+    src: url(../resources/Consolas.ttf);
+}
+
+*:hover {
+    z-index: 1;
+}
+
+[data-theme="dark"] {
+    --body: #1c1c1c;
+    --color: #dbdbdb;
+    --scrollbar-background: #282928;
+
+    --userselect-background: #ffffff15;
+    --userselect-color: #41bc5d;
+
+    --cursorText: url("../resources/cursors/textD.png") text;
+    --cursorNormal: url("../resources/cursors/normalD.png") default;
+    --cursorHand: url("../resources/cursors/handD.png") pointer;
+
+    --desktop-background-color: #111111;
+    --category-background: #111111;
+    --title-border-color: white;
+    --white: white;
+    --button-background: #242424;
+    --button-boxShadow: none;
+    --button-boxShadow-hover: 0 0 8px 4px #41bc5d;
+    --button-color: #41bc5d;
+    --button-color-hover: #ffffff;
+    --button-background-hover: #41bc5d;
+    --button-border: #404040;
+    --button-outline: #242424;
+    --button-border-hover: #2b2b2b;
+    --button-outline-hover: #151515;
+    --switch-thumb: #41bc5d;
+    --switch-back: #313131;
+    --switch-back-shadow: #2b843f;
+    --dropdown-boxShadow-hover: #41bc5d;
+    --dropdown-button-background: #2b2a2a;
+    --dropdown-button-background-hover: #41bc5d;
+    --dropdown-button-color-hover: white;
+}
+
+[data-theme="night"] {
+    --body: #181446;
+    --color: #ffe688;
+    --scrollbar-background: #26206a;
+
+    --userselect-background: #32299b;
+    --userselect-color: #fff7a5;
+
+    --cursorText: url("../resources/cursors/textN.png") text;
+    --cursorNormal: url("../resources/cursors/normalN.png") default;
+    --cursorHand: url("../resources/cursors/handN.png") pointer;
+
+    --desktop-background-color: #0e0a40;
+    --category-background: #0e0a40;
+    --title-border-color: #ffe688;
+    --white: #ffe688;
+    --button-background: #3b3497;
+    --button-boxShadow: none;
+    --button-boxShadow-hover: 0 0 8px 4px #ffe688;
+    --button-color: #ffe688;
+    --button-color-hover: #181446;
+    --button-background-hover: #ffe688;
+    --button-border-hover: #0e0a40;
+    --button-outline-hover: #ffe688;
+    --switch-thumb: #ffe688;
+    --switch-back: #332c84;
+    --switch-back-shadow: #ffe6887d;
+    --dropdown-boxShadow-hover: #ffe688;
+    --dropdown-button-background: #19126c;
+    --dropdown-button-background-hover: #ffe688;
+    --dropdown-button-color-hover: #0e0a40;
+}
+
+[data-theme="fracital"] {
+    --body: #222;
+    --color: #ff40f7;
+    --scrollbar-background: #282928;
+
+    --userselect-background: #ffffff1a;
+    --userselect-color: #ffbefc;
+
+    --cursorText: url("../resources/cursors/textF.png") text;
+    --cursorNormal: url("../resources/cursors/normalF.png") default;
+    --cursorHand: url("../resources/cursors/handF.png") pointer;
+
+    --desktop-background-color: #1a1a1a;
+    --category-background: #1c1c1c;
+    --title-border-color: #ff40f7;
+    --white: #ff40f7;
+    --button-background: #3d3d3d;
+    --button-boxShadow: none;
+    --button-boxShadow-hover: 0 0 8px 4px #ff3ff5d4;
+    --button-color: #ff3ff5d4;
+    --button-color-hover: #ffffff;
+    --button-background-hover: #ff3ff5d4;
+    --button-border-hover: #252525;
+    --button-outline-hover: #ff40f7;
+    --switch-thumb: #ff40f7;
+    --switch-back: #424242d3;
+    --switch-back-shadow: #ff40f787;
+    --dropdown-boxShadow-hover: #ff3ff5d4;
+    --dropdown-button-background: #262626;
+    --dropdown-button-background-hover: #ff3ff5d4;
+    --dropdown-button-color-hover: white;
+}
+
+[data-theme="almond"] {
+    --body: #1c1c1c;
+    --color: #E89D46;
+    --scrollbar-background: #282928;
+    --userselect-background: #ffffff1a;
+    --userselect-color: #FFC889;
+    
+    --cursorText: url("../resources/cursors/textA.png") text;
+    --cursorNormal: url("../resources/cursors/normalA.png") default;
+    --cursorHand: url("../resources/cursors/handA.png") pointer;
+
+    --desktop-background-color: #1c1c1c;
+    --category-background: #262626;
+    --title-border-color: #E89D46;
+    --white: #E89D46;
+    --button-background: #313131;
+    --button-boxShadow: none;
+    --button-boxShadow-hover: 0 0 8px 4px #E89D46;
+    --button-color: #E89D46;
+    --button-color-hover: #ffffff;
+    --button-background-hover: #E89D46;
+    --button-border-hover: #252525;
+    --button-outline-hover: #E89D46;
+    --switch-thumb: #E89D46;
+    --switch-back: #424242d3;
+    --switch-back-shadow: #E89D46;
+    --dropdown-boxShadow-hover: #E89D46;
+    --dropdown-button-background: #262626;
+    --dropdown-button-background-hover: #E89D46;
+    --dropdown-button-color-hover: white;
+}
+
+::selection {
+    background: var(--userselect-background);
+    color: var(--userselect-color);
+}
+
+* {
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scrollbar-color: var(--color) var(--scrollbar-background);
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-background);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color);
+    border-radius: 6px;
+}
+
+body {
+    margin: 0;
+    background: var(--body);
+    color: var(--color);
+    display: flex;
+    flex-direction: column;
+    animation: fadeInAnimation ease-in-out 0.3s;
+    animation-iteration-count: 1;
+    height: max-content;
+    padding-bottom: 7px;
+}
+
+.taskbar {
+    display: flex;
+    width: calc(100% - 10px);
+    height: min-content;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    gap: 10px;
+}
+
+.title {
+    color: var(--color);
+    font-family: Poppins;
+    font-size: 18px;
+}
+
+.settings {
+    width: calc(100% - 12px);
+    height: min-content;
+    display: grid;
+    gap: 8px;
+    padding: 0 6px;
+}
+
+[view] {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 200ms ease-in-out;
+    overflow: auto;
+    scrollbar-color: var(--color) var(--scrollbar-background);
+    scrollbar-width: thin;
+}
+
+[view]::-webkit-scrollbar-track {
+    background: var(--scrollbar-background);
+}
+
+[view]::-webkit-scrollbar-thumb {
+    background-color: var(--color);
+    border-radius: 6px;
+}
+
+[view]::-webkit-scrollbar {
+    width: 6px;
+}
+
+[hiddenCat=true] {
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+[hiddenCat=false] {
+    opacity: 1;
+    pointer-events: all;
+    z-index: 1;
+}
+
+.border-bottom {
+    width: 100%;
+    height: 4px;
+    background-color: var(--title-border-color);
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.btns {
+    display: flex;
+    flex-wrap: wrap;
+    width: max-content;
+    height: max-content;
+    margin-top: 9px;
+    justify-content: center;
+    gap: 4px;
+}
+
+.btn.frac {
+    background-color: #3d3d3d;
+    box-shadow: none;
+    color: #ff3ff5d4;
+    border-radius: 4px;
+    height: max-content;
+    width: max-content;
+    transition: ease 0.5s;
+    cursor: url("../resources/cursors/handF.png"), pointer !important;
+}
+
+.btn.frac:hover {
+    background-color: #ff3ff5d4;
+    box-shadow: 0 0 8px 4px #ff3ff5d4;
+    color: #ffffff;
+    cursor: var(--cursorHand);
+}
+
+.btn.dark {
+    background-color: #242424;
+    color: #41bc5d;
+    border-radius: 4px;
+    height: max-content;
+    width: max-content;
+    transition: ease 0.5s;
+    cursor: url("../resources/cursors/handD.png"), pointer !important;
+}
+
+.btn.dark:hover {
+    background-color: #41bc5d;
+    box-shadow: 0 0 8px 4px #41bc5d;
+    color: white;
+    cursor: var(--cursorHand);
+}
+
+.btn.night {
+    background-color: #3b3497;
+    box-shadow: none;
+    color: #ffe688;
+    border-radius: 4px;
+    height: max-content;
+    width: max-content;
+    font-family: Metro;
+    transition: ease 0.5s;
+    cursor: url("../resources/cursors/handN.png"), pointer !important;
+}
+
+.btn.night:hover {
+    background-color: #ffe688;
+    box-shadow: 0 0 8px 4px #ffe688;
+    color: #0e0a40;
+}
+
+.btn.almond {
+    background-color: #313131;
+    box-shadow: none;
+    color: #E89D46;
+    border-radius: 4px;
+    height: max-content;
+    width: max-content;
+    font-family: Metro;
+    transition: ease 0.5s;
+    cursor: url("../resources/cursors/handA.png"), pointer !important;
+}
+
+.btn.almond:hover {
+    background-color: #CF8B3C;
+    box-shadow: 0 0 8px 4px #CF8B3C;
+    color: #fbfbfb;
+}
+
+.btn {
+    background-color: var(--button-background);
+    box-shadow: var(--button-boxShadow);
+    color: var(--button-color);
+    border: none;
+    border-radius: 4px;
+    height: max-content;
+    width: max-content;
+    font-family: Metro;
+    padding: 6px 8px;
+    transition: ease 0.5s;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: var(--button-background-hover);
+    box-shadow: var(--button-boxShadow-hover);
+    color: var(--button-color-hover);
+    cursor: var(--cursorHand);
+}
+
+.btn.input:hover {
+    background-color: var(--button-background-hover);
+    color: var(--button-color-hover);
+    cursor: var(--cursorText);
+}
+
+.btn.input:hover [input-color-value] {
+    box-shadow: 0 0 6px 0px #00000091;
+}
+
+[input-hidden] {
+    visibility: collapse;
+    z-index: -9;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.btn.input {
+    border: none;
+    outline: none;
+    width: 8em;
+}
+
+.btn.input.color {
+    cursor: var(--cursorHand);
+}
+
+.btn.input.color {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+[input-color-value] {
+    height: calc(100% - 2px);
+    width: calc(100% - 2px);
+    border-radius: 2px;
+    box-shadow: 0 0 6px 0px transparent;
+    transition: 200ms ease-in-out;
+}
+
+.slides {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    position: relative;
+}
+
+.slides.flexy {
+    width: max-content;
+}
+
+label {
+    cursor: var(--cursorText);
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    position: relative;
+    background-color: var(--switch-back);
+    width: 34px;
+    height: 16px;
+    border-radius: 8px;
+    cursor: var(--cursorHand);
+}
+
+input[type="checkbox"]::before {
+    transition: 0.2s ease-in-out;
+    content: "";
+    position: absolute;
+    right: 18px;
+    height: 16px;
+    width: 16px;
+    transform: scale(1.2);
+    background-color: var(--switch-thumb);
+    border-radius: 14px;
+    box-shadow: 0 0 3px 1px var(--switch-back-shadow);
+}
+
+input:checked[type="checkbox"]::before {
+    right: 0;
+}
+
+/* make input[type="nunber"] arrows none */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+.radio {
+    display: inline-flex;
+    cursor: var(--cursorHand);
+    align-items: center;
+    gap: 4px;
+}
+
+.radioInput {
+    display: none;
+}
+
+.check {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--radio-border);
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: block;
+    background-color: var(--radio-check);
+    transition: 0.2s ease-in-out;
+    transform: scale(0);
+}
+
+.radioInput:checked + .check::after {
+    transform: scale(1);
+}
+
+.dropdown {
+    position: relative;
+    width: max-content;
+    height: auto;
+    padding: 6px;
+    border-radius: 4px;
+    transition: ease-in-out 200ms;
+}
+
+.dropbtn {
+    background-color: var(--dropdown-button-background-hover);
+    box-shadow: 0 0 8px 2px var(--dropdown-boxShadow-hover);
+    color: var(--dropdown-button-color-hover);
+    border: none;
+    border-radius: 6px;
+    height: max-content;
+    width: 100%;
+    font-family: Metro;
+    padding: 6px;
+    transition: ease 0.5s;
+    font-size: 16px;
+    margin: 0;
+    cursor: var(--cursorHand);
+}
+
+.dropbtn:hover {
+    box-shadow: 0 0 10px 4px var(--dropdown-boxShadow-hover);
+}
+
+.dropMorph {
+    background-color: var(--button-background);
+    box-shadow: none;
+    color: var(--white);
+    border: none;
+    border-radius: 6px 6px 0px 0px;
+    height: max-content;
+    width: 100%;
+    font-family: Metro;
+    padding: 6px;
+    transition: ease 0.5s;
+    font-size: 16px;
+    margin: 0;
+}
+
+.dropMorph:hover {
+    box-shadow: none;
+}
+
+.dropdown-content {
+    visibility: collapse;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+    border-radius: 0px 0px 6px 6px;
+    box-shadow: 0 0 16px 4px rgba(0,0,0,0.2);
+    transition: ease-in-out 200ms;
+    background-color: var(--dropdown-button-background);
+    height: 0;
+}
+
+.dropdown-content a {
+    color: var(--color);
+    padding: 4px 8px;
+    text-decoration: none;
+    cursor: var(--cursorHand);
+    transition: 200ms ease-in-out;
+}
+
+.dropdown-content a:hover {
+    box-shadow: 0 0 8px 2px var(--dropdown-boxShadow-hover);
+    background-color: var(--dropdown-button-background-hover);
+    color: var(--dropdown-button-color-hover);
+}
+
+.dropdown-content.show {
+    visibility: visible;
+    opacity: 1;
+    height: 81px;
+}
+
+[titleSpan] {
+    height: 30px;
+    background-color: var(--color);
+    width: 5px;
+    border-radius: 6px;
+}
+
+.views {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.categories {
+    opacity: 1;
+    position: relative;
+    top: 6px;
+    left: 6px;
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    z-index: 8;
+}
+
+.category {
+    cursor: var(--cursorHand);
+    user-select: none;
+    width: 62px;
+    height: 62px;
+    border-radius: 6px;
+    background-color: var(--category-background);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms ease-in-out;
+}
+
+.category:hover {
+    background-color: var(--button-background-hover);
+    box-shadow: 0 0 4px 8px var(--button-boxShadow-hover);
+    z-index: 3;
+}
+
+.category:hover .catStroke path {
+    stroke: var(--button-color-hover);
+}
+
+.category:hover .catFilly path {
+    fill: var(--button-color-hover);
+}
+
+.catIcon {
+    width: 32px;
+    height: 32px;
+    z-index: 2;
+    transition: 200ms ease-in-out;
+}
+
+.category:hover .catStroke path {
+    stroke: var(--button-color-hover);
+}
+
+.category:hover .catFilly path {
+    fill: var(--button-color-hover);
+}
+
+.category:hover .catStroke rect {
+    stroke: var(--button-color-hover);
+}
+
+.category:hover .catFilly rect {
+    fill: var(--button-color-hover);
+}
+
+.catIcon {
+    width: 32px;
+    height: 32px;
+    z-index: 2;
+    transition: 200ms ease-in-out;
+}
+
+.fill {
+    fill: var(--button-color);
+}
+
+.stroke {
+    stroke: var(--button-color);
+}
+
+.catFilly path {
+    transition: 200ms ease-in-out;
+}
+
+.catStroke path {
+    transition: 200ms ease-in-out;
+}
+
+.catFilly rect {
+    transition: 200ms ease-in-out;
+}
+
+.catStroke rect {
+    transition: 200ms ease-in-out;
+}
+
+.deskBackC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--desktop-background-color);
+    height: 186px;
+    width: 276px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.deskBack {
+    height: 186px;
+    width: 276px;
+    object-fit: cover;
+}
+
+.deskBack.contain {
+    height: 186px;
+    width: max-content;
+    max-width: 276px;
+    max-height: 186px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.customImage {
+    display: none;
+}
+
+.reset {
+    position: absolute;
+    bottom: 6px;
+    left: 6px;
+    z-index: 9;
+}
+
+.importLabel {
+    position: absolute;
+    bottom: 40px;
+    right: 6px;
+    z-index: 9;
+}
+
+.exportImportC {
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    z-index: 9;
+}
+
+.spacer {
+    height: 12px;
+}
