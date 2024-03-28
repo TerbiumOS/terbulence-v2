@@ -5,7 +5,7 @@ import path from "path";
 import fs from "fs";
 import { fileURLToPath } from "url";
 import wisp from "wisp-server-node";
-import { libcurlPath } from "@mercuryworkshop/libcurl-transport";
+import { epoxyPath } from "@mercuryworkshop/epoxy-transport";
 import { baremuxPath } from "@mercuryworkshop/bare-mux";
 import "ws";
 
@@ -25,7 +25,7 @@ app.use(
   })
 );
 app.use("/baremux/", express.static(baremuxPath));
-app.use("/libcurl/", express.static(libcurlPath));
+app.use("/epoxy/", express.static(epoxyPath));
 const server = createServer();
 
 server.on("request", (req, res) => {

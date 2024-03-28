@@ -55,7 +55,7 @@ function ser() {
     }
     window.open("sw" + "/" + xor.encode(url), "_self");
 }
-
+// meow :3 - yuko
 searchi.addEventListener("focus", () => {
     searchi.addEventListener("keydown", (e) => {
         if(e.keyCode == "9") {

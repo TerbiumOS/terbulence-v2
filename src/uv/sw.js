@@ -9,7 +9,8 @@ try {
     importScripts('/uv/uv.bundle.js');
     importScripts('/uv/uv.config.js');
     importScripts('/uv/uv.sw.js');
-    importScripts('/libcurl/index.js');
+    importScripts('/epoxy/index.js');
+    importScripts('/baremux/bare.js');
     
     const sw = new UVServiceWorker();
     

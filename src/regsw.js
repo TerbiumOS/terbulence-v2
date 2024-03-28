@@ -20,10 +20,10 @@ window.addEventListener("DOMContentLoaded", (event) => {
     await navigator.serviceWorker.register("dynsw.js", {
       scope: '/dyn/',
     });
-    const CurlMod = window.CurlMod
+    const EpxMod = window.EpxMod
     console.log("Dynamic Service Worker registered.");
     BareMux.registerRemoteListener(navigator.serviceWorker.controller);
-    BareMux.SetTransport("CurlMod.LibcurlClient", { wisp: wispserver, wasm: "https://cdn.jsdelivr.net/npm/libcurl.js@v0.6.6/libcurl.wasm" });
+    BareMux.SetTransport("EpxMod.EpoxyClient", { wisp: wispserver });
   }  
   registerSW();
 });
