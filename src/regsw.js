@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     if (!navigator.serviceWorker)
       throw new Error("Your browser doesn't support service workers.");
   
-    await navigator.serviceWorker.register("/uv/sw.js", {
+    await navigator.serviceWorker.register("/sw.js", {
       scope: '/uv/sw/',
     });
     console.log("UV Service Worker registered.");
