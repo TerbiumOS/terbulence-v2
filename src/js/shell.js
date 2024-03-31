@@ -125,10 +125,5 @@ appsL.addEventListener("click", () => {
 // }
 
 document.getElementById("power").addEventListener("click", () => {
-    let pow = localStorage.getItem("powd");
-    if(!pow) {
-        window.open("https://google.com", "_self");
-    } else {
-        window.open(pow, "_self");
-    }
+    new WIN("(link)[http://localhost:8080/resources/h.mp4]", "(icn)[./terbium.png]", "(title)[Quar?]", "(os)[true]", "(full)[true]", "(appname)[youtube]");    
 })

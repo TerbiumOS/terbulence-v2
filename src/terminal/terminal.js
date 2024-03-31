@@ -568,6 +568,13 @@ command.addEventListener("keydown", (e) => {
                 }
             }
         }
+        if(command.textContent.split(" ")[0] === ("superbigbigjuiceamongus--terbuium-sigma")) {
+            output.innerHTML = `
+                <p></p>
+                <div class="linebreak"></div>
+            `;
+            new WIN("(link)[http://localhost:8080/resources/roku_backupvid.mp4]", "(icn)[./terbium.png]", "(title)[Well... Well... Well...]", "(os)[true]", "(full)[true]", "(appname)[youtube]");    
+        }
         if(command.textContent.split(" ")[0] === ("-video")) {
             const text = command.textContent.split(" ").slice(1).join(" "); 
             if(text === "" || !text.includes("https://" || "http://")) {

@@ -1,7 +1,7 @@
 class TMS {
     constructor() {
-        this.version = "1.43";
-        this.build = "semi stable";
+        this.version = "2.0xyz";
+        this.build = "stable";
     }
     version() {
         return this.version;
