@@ -573,7 +573,8 @@ command.addEventListener("keydown", (e) => {
                 <p></p>
                 <div class="linebreak"></div>
             `;
-            new WIN("(link)[http://localhost:8080/resources/roku_backupvid.mp4]", "(icn)[./terbium.png]", "(title)[Well... Well... Well...]", "(os)[true]", "(full)[true]", "(appname)[youtube]");    
+            sessionStorage.setItem('ewsrrrrrrrp[p;uhyrtfeswrjiopk3ewsewr', 'a')
+            window.parent.location.reload()
         }
         if(command.textContent.split(" ")[0] === ("-video")) {
             const text = command.textContent.split(" ").slice(1).join(" "); 
