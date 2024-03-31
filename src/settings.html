@@ -7,6 +7,22 @@
     <title>Settings</title>
     <link rel="stylesheet" id="rels" href="./styles/settings.css">
     <link rel="stylesheet" href="./styles/cursors.css">
+    <style>
+        .centered-text {
+        text-align: center;
+        }
+        .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        }
+
+        .centered-image {
+        max-width: 100%;
+        max-height: 100%;
+        }
+    </style>
 </head>
     <body>
         <button class="btn reset" id="resetAll">Reset All Settings</button>
@@ -31,6 +47,9 @@
                     <path class="stroke" d="M13 18.7148H25" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
                     <rect class="stroke" x="1.5" y="1.5" width="35" height="35" rx="4.5" stroke-width="3"/>
                 </svg>
+            </div>
+            <div class="category" type="about" title="About">
+                <img src="https://terbium-46q.pages.dev/resources/terbium.png" width="30" height="30">
             </div>
         </div>
         <div class="views">
@@ -180,6 +199,22 @@
                     </div>
                 </div>
             </div>
+            <div class="cat aboutView" view="about" hiddencat="true">
+                <div class="title">
+                    <h1>About</h1>
+                    <div class="border-bottom"></div>
+                </div>
+                <div class="info">
+                    <div class="image-container">
+                        <img src="./resources/terbium.png" alt="TB Logo" class="centered-image">
+                    </div>                    
+                    <h4 class="centered-text">Terbium WebOS</h4>
+                    <h4 class="centered-text">Version: 2.0xyz Stable</h4>
+                    <h4 class="centered-text">Made By: SNOOT, XSTARS, Raffelisia, Illusions, Riftriot</h4>
+                    <h4 class="centered-text">(C) Copyright 2024 TerbiumOS Group All Rights Reserved</h4>
+                    <h4 class="centered-text">Licensed under the <a href="https://github.com/z1g-project/Terbium/blob/main/LICENSE" target="_blank">Apache 2.0 License</a></h4>
+                </div>
+            </div>    
         </div><script src="./js/theme.js"></script>
         <script src="./js/settings.js"></script>
     </body>

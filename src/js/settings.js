@@ -967,6 +967,12 @@ categories.forEach(category => {
                 view.setAttribute("hiddenCat", "true");
             })
             other.setAttribute("hiddenCat", "false");
+        } else if(type === "about") {
+            const other = document.querySelector("[view='about']");
+            views.forEach(view => {
+                view.setAttribute("hiddenCat", "true");
+            })
+            other.setAttribute("hiddenCat", "false");
         }
     })
 });

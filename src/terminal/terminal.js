@@ -248,7 +248,7 @@ command.addEventListener("keydown", (e) => {
         }
         if(command.textContent.split(" ")[0] === ("version")) {
             output.innerHTML = `
-                <p>Terbium Version: ${version}</p>
+                <p>Terbulence Version: ${version}</p>
                 <div class="linebreak"></div>
             `;
         }
