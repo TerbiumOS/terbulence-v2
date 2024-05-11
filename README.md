@@ -14,14 +14,15 @@
 
 ## <span style="color: #32ae62;">Setup</span>
 
-To get started its pretty easy you need pnpm which can be installed by running: `npm i -g pnpm` and then just need to the run following command
+To get started its pretty easy; you only need npm (which you should have.) you just need to run the following command
 ```
-pnpm i && pnpm start
-```
-    
-and visit [http://localhost:3000](http://localhost:3000) you should be good to go!
+npm i && npm start
+``` 
+and visit [http://127.0.0.1:8080](http://127.0.0.1:8080) you should be good to go!
+ls
+If you wish to not start the server with the Bare Server Functionality you can just run `npm run dev`, its highly recommended to just run `npm start` 
 
-If you wish to not start the server with the Bare Server Functionality you can just run `pnpm run dev`, its highly recommended to just run `pnpm start`
+For pnpm, yarn, bun, etc, the process should be very similar, just replace "npm" with the package manager of your choice.
 
 > <span style="font-family: none; color: #ffd900;">⚠</span> <span style="color: #ffd900;">Warning</span><br>
 > If you are going to static host Terbium you will need to change the bare server and you would not follow those steps. Refer to the [docs](https://github.com/z1g-project/Terbium/wiki/Deploy-to-Cloudflare-Pages) for more information
