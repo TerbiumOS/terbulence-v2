@@ -24,8 +24,8 @@ dependencies:
     specifier: ^1.15.0
     version: 1.15.0
   simplebar:
-    specifier: ^6.2.5
-    version: 6.2.5
+    specifier: ^6.2.7
+    version: 6.2.7
   wisp-server-node:
     specifier: ^1.0.4
     version: 1.0.4
@@ -934,20 +934,19 @@ packages:
       object-inspect: 1.13.1
     dev: false
 
-  /simplebar-core@1.2.4:
-    resolution: {integrity: sha512-P+Sqshef4fq3++gQ82TgNYcgl3qZFSCP5jS2/8NMmw18oagXOijMzs1G+vm6RUY3oMvpwH3wGoqh9u6SyDjHfQ==}
+  /simplebar-core@1.2.6:
+    resolution: {integrity: sha512-H5NYU+O+uvqOH5VXw3+lgoc1vTI6jL8LOZJsw4xgRpV7uIPjRpmLPdz0TrouxwKHBhpVLzVIlyKhaRLelIThMw==}
     dependencies:
       '@types/lodash-es': 4.17.12
-      can-use-dom: 0.1.0
       lodash: 4.17.21
       lodash-es: 4.17.21
     dev: false
 
-  /simplebar@6.2.5:
-    resolution: {integrity: sha512-vfxKR6KNBsPx7+sZnqO7T8VuCvi4px6OlycrrkNgyjvoHhRW7LIyVkHhUfXxbz33Gw99Wb9UMMsnEZv35wtLSw==}
+  /simplebar@6.2.7:
+    resolution: {integrity: sha512-IdD6HwZLz4f83lG0yN5r/3Mts4qR+pKAc9IjVdtJ96Ow6IqSA+jG2PlniQ710XUygal/mOA774IgAvcoirUP4g==}
     dependencies:
       can-use-dom: 0.1.0
-      simplebar-core: 1.2.4
+      simplebar-core: 1.2.6
     dev: false
 
   /source-map-support@0.5.21:
