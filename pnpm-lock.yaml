@@ -30,8 +30,8 @@ dependencies:
     specifier: ^1.0.4
     version: 1.0.4
   ws:
-    specifier: ^8.16.0
-    version: 8.16.0
+    specifier: ^8.17.1
+    version: 8.17.1
 
 packages:
 
@@ -196,7 +196,7 @@ packages:
       http-errors: 2.0.0
       ipaddr.js: 2.1.0
       source-map-support: 0.5.21
-      ws: 8.16.0
+      ws: 8.17.1
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -1033,7 +1033,7 @@ packages:
   /wisp-server-node@1.0.4:
     resolution: {integrity: sha512-23mGc9vkjcqJaRzkrX5QbmMciEgfSWBiBcduNn39ttBQbaVdP050om7FzYzLiv9TYt5OMw5d2KyDxZ7QUErzwg==}
     dependencies:
-      ws: 8.16.0
+      ws: 8.17.1
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -1041,6 +1041,19 @@ packages:
 
   /ws@8.16.0:
     resolution: {integrity: sha512-HS0c//TP7Ina87TfiPUz1rQzMhHrl/SG2guqRcTOIUYD2q8uhUdNHZYJUaQ8aTGPzCh+c6oawMKW35nFl1dxyQ==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
+    dev: false
+
+  /ws@8.17.1:
+    resolution: {integrity: sha512-6XQFvXTkbfUOZOKKILFG1PDK2NDQs4azKQl26T0YS5CxqWLgXajbPZ+h4gZekJyRqFU8pvnbAbbs/3TgRPy+GQ==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
